@@ -8,6 +8,7 @@ import Inicio from "./components/pages/Inicio";
 import Administrador from "./components/pages/Administrador";
 import FormProducto from "./components/pages/producto/FormProducto"; // Asegúrate de importar el componente FormProducto
 import Error404 from "./components/pages/Error404";
+import Login from "./components/pages/Login";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Inicio />} />
         <Route exact path="/administrador" element={<Administrador />} />
-        <Route exact path="/crear-producto" element={<FormProducto />} /> {/* Asegúrate de que esta ruta esté configurada */}
+        <Route exact path="/crear-producto" element={<FormProducto />} />
+        <Route exact path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
