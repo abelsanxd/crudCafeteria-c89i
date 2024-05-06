@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Importa Link
 import FormProducto from "../pages/producto/FormProducto.jsx";
 import ItemProducto from "./producto/ItemProducto";
